@@ -1,0 +1,46 @@
+@import url(https://fonts.googleapis.com/css?family=Walter+Turncoat);
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+@font-face {
+  font-family: newfont;
+  src: url(2157-font.otf);
+}
+
+body {
+  margin: 5vw 10vw 0px 10vw;
+  background-color: #353839;
+  color: #D2042D;
+  font-family: "newfont";
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 2vw;
+}
+
+img {
+  max-height: 70vh;
+  width: auto;
+}
+
+input, button {
+  font-family: "newfont";
+  font-size: 1rem;
+  background-color: #D2042D;
+  height: 3vh;
+  border-radius: 8px;
+  padding: 4px;
+}
+
+@media only screen and (max-width: 640px){
+  body{
+    line-height: 10vw;
+  }
+  img{
+    max-height: 50vh;
+  }
+}
