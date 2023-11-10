@@ -6,6 +6,7 @@ let Pictures = ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg", "7.jpg", "
 
 executeButton.addEventListener("click", function () {
     generateRandomPicture();
+    restyle();
 });
 
 function generateRandomPicture() {
@@ -16,4 +17,19 @@ function generateRandomPicture() {
     let currentInputText = inputElement.value;
     outputParagraph.innerHTML = currentInputText + ", I hope today you";
     outputImage.src = imagePath;
+}
+
+function restyle(){
+	let textAlign = ["left", "center", "right"];
+	let colors = 'rgb(' + Math.floor(Math.random() * 255) + ',' + Math.floor(Math.random() * 255) + ',' + Math.floor(Math.random() * 255) + ')';
+    let size = ["1.2rem", "1.5rem", "1.8rem"];
+
+    // Randomly select values for each property
+    let randomSize = size[Math.floor(Math.random() * size.length)];
+    let randomTextAlign = textAlign[Math.floor(Math.random() * textAlign.length)];
+
+    // Apply the randomly selected values to the output text
+    outputText.style.color = colors;
+    outputText.style.fontSize = randomSize;
+    outputText.style.textAlign = randomTextAlign;
 }
