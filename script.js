@@ -24,11 +24,9 @@ function restyle(){
 	let colors = 'rgb(' + Math.floor(Math.random() * 255) + ',' + Math.floor(Math.random() * 255) + ',' + Math.floor(Math.random() * 255) + ')';
     let size = ["1.2rem", "1.5rem", "1.8rem"];
 
-    // Randomly select values for each property
     let randomSize = size[Math.floor(Math.random() * size.length)];
     let randomTextAlign = textAlign[Math.floor(Math.random() * textAlign.length)];
 
-    // Apply the randomly selected values to the output text
     outputText.style.color = colors;
     outputText.style.fontSize = randomSize;
     outputText.style.textAlign = randomTextAlign;
