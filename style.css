@@ -32,7 +32,6 @@ input, button {
   font-size: 1rem;
   background-color: #D2042D;
   height: 3vh;
-  border-radius: 8px;
   padding: 4px;
 }
 
@@ -42,5 +41,9 @@ input, button {
   }
   img{
     max-height: 50vh;
+  }
+  input, button {
+    height: 6vh;
+    color: black;
   }
 }
